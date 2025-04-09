@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Online Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>My Store</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <section class="products">
+        <div class="product">
+            <img src="/product1.jpg" alt="Men's Shirt">
+            <h3>Men's Casual Shirt</h3> 
+            <p>$699.00</p>
+            <button onclick="addToCart('Men\'s Casual Shirt', 699)">Add to Cart</button>
+            <button onclick="startPayment('Men\'s Casual Shirt', 699)">Buy Now</button>
+        </div>
+        
+        <div class="product">
+            <img src="/product3.avif" alt="Men's Shirt">
+            <h3>Men's Casual Shirt</h3>
+            <p>$599.00</p>
+            <button onclick="addCart('Men\'s Casual Shirt',599)">Add to Cart</button>
+            <button onclick="startPayment('Men\'s Casual Shirt', 699)">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="\product2.jpg" alt="Women's Dress">
+            <h3>Women's Stylish Dress</h3>
+            <p>₹799</p>
+            <button onclick="addToCart(799)">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="/product4.jpg" alt="Women's Dress">
+            <h3>Women's Stylish Dress</h3>
+            <p>₹499</p>
+            <button onclick="addToCart(499)">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="/product5.jpg" alt="Women's Dress">
+            <h3>Women's Stylish Dress</h3>
+            <p>₹1,299</p>
+            <button onclick="addToCart(1299)">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="/product6.jpg" alt="Women's Dress">
+            <h3>Women's Stylish Dress</h3>
+            <p>₹999</p>
+            <button onclick="addToCart(999)">Add to Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 My Store | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</html>
